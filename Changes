@@ -1,5 +1,6 @@
 Revision history for CPAN-Testers-WWW-Reports-Query-Report
 
+0.02    2014-04-01
         - fixed skip test count in 10query.t.
 
 0.01    2014-03-30

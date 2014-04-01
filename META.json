@@ -1,6 +1,6 @@
 {
     "name": "CPAN-Testers-WWW-Reports-Query-Report",
-    "version": "0.01",
+    "version": "0.02",
     "abstract": "Retrieve CPAN Testers report direct from the CPAN Testers website",
     "author": [
         "Barbie (BARBIE) <barbie@cpan.org>"
@@ -47,7 +47,7 @@
     "provides": {
         "CPAN::Testers::WWW::Reports::Query::Report": {
             "file": "lib/CPAN/Testers/WWW/Reports/Query/Report.pm",
-            "version": "0.01"
+            "version": "0.02"
         }
     },
     "no_index": {
