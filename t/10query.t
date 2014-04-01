@@ -57,7 +57,7 @@ my @args = (
 );
 
 SKIP: {
-    skip "Network unavailable", 18 if(pingtest());
+    skip "Network unavailable", 21 if(pingtest());
 
     for my $args (@args) {
         my $spec = $args->{spec};
