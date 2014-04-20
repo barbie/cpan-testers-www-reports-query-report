@@ -1,5 +1,5 @@
-CPAN::Testers::WWW::Reports::Query::Report
-==========================================
+CPAN-Testers-WWW-Reports-Query-Report
+=====================================
 
 This distribution retrieves a report direct from CPAN Testers website.
 
