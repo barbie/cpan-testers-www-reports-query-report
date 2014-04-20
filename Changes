@@ -3,6 +3,7 @@ Revision history for CPAN-Testers-WWW-Reports-Query-Report
 
         - return more informative error messages.
         - network may be responsive, but server may be busy.
+        - fixed distribution name in META.
 
 0.02    2014-04-01
         - fixed skip test count in 10query.t.
