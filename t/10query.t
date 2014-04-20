@@ -65,7 +65,9 @@ SKIP: {
         my $query = CPAN::Testers::WWW::Reports::Query::Report->new( %$spec );
         isa_ok($query,'CPAN::Testers::WWW::Reports::Query::Report');
 
+        my $error = '';
         my $data = $query->report( %{$args->{args}} );
+
         if($data && $args->{json}) {
             $data = decode_json($data);
             #diag("JSON data=".Dumper($data));
@@ -78,12 +80,19 @@ SKIP: {
             #diag("fact data=".Dumper($fact));
             is($fact->{metadata}{core}{$_},$args->{results}{$_},".. got '$_' in fact [$args->{args}{report}]") for(keys %{$args->{results}});
         } else {
-            diag("error args=".Dumper($args));
-            diag("error data=".Dumper($data));
-            ok(0,'missing results for test');
+            # we are running live tests, so occasionally the server may be busy
+            $error = $query->error;
+            if($error =~ /No response from server/) {
+                ok(1,'skip as server not responding');
+            } else {
+                diag("error args=".Dumper($args));
+                diag("error data=".Dumper($data));
+                diag("error message=".$error);
+                ok(0,'missing results for test');
+            }
         }
 
-        is($query->error,'','.. no errors');
+        is($query->error,$error,'.. errors as anticipated');
     }
 }
 
