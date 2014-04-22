@@ -1,6 +1,7 @@
 Revision history for CPAN-Testers-WWW-Reports-Query-Report
 ==========================================================
 
+0.03    2014-04-22
         - return more informative error messages.
         - network may be responsive, but server may be busy.
         - fixed distribution name in META.
