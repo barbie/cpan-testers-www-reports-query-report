@@ -4,6 +4,7 @@ Revision history for CPAN-Testers-WWW-Reports-Query-Report
         - fixed license fields in META.json to be lists.
         - added homepage to META resources.
         - added documentation about the CPAN Testers Fund.
+        - extended META testing.
 
 0.03    2014-04-22
         - return more informative error messages.
