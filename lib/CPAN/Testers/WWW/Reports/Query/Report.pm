@@ -115,7 +115,10 @@ sub report {
         return;
     }
 
-    return unless($data->{success});
+    unless($data->{success}) {
+        $self->{error} = "no report found";
+        return;
+    }
 
     my $as = ($hash{as_json} || (!defined $hash{as_json} && $self->{as_json})) ? 'json' : '';
     $as  ||= ($hash{as_hash} || (!defined $hash{as_hash} && $self->{as_hash})) ? 'hash' : 'fact';
