@@ -5,6 +5,7 @@ Revision history for CPAN-Testers-WWW-Reports-Query-Report
         - added homepage to META resources.
         - added documentation about the CPAN Testers Fund.
         - extended META testing.
+        - fixed lead module name in Makefile.PL.
 
 0.03    2014-04-22
         - return more informative error messages.

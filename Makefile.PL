@@ -8,7 +8,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     AUTHOR              => 'Barbie <barbie@cpan.org>',
-    NAME                => 'CPAN-Testers-WWW-Reports-Query-Report',
+    NAME                => 'CPAN::Testers::WWW::Reports::Query::Report',
     VERSION_FROM        => 'lib/CPAN/Testers/WWW/Reports/Query/Report.pm',
     ABSTRACT            => 'Retrieve CPAN Testers report direct from the CPAN Testers website',
     NO_META             => 1,
