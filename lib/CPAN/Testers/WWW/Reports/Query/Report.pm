@@ -3,7 +3,7 @@ package CPAN::Testers::WWW::Reports::Query::Report;
 use strict;
 use warnings;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
  
 #----------------------------------------------------------------------------
 
@@ -260,7 +260,7 @@ L<http://iheart.cpantesters.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-  Copyright (C) 2014 Barbie for Miss Barbell Productions.
+  Copyright (C) 2014-2016 Barbie for Miss Barbell Productions.
 
   This module is free software; you can redistribute it and/or
   modify it under the Artistic License 2.0.

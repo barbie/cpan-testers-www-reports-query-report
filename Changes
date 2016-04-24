@@ -1,6 +1,7 @@
 Revision history for CPAN-Testers-WWW-Reports-Query-Report
 ==========================================================
 
+0.05    2016-04-24
         - added a content() method to aid debugging. Returns the text response
           sent by the server.
         - check network using api.cpantesters.org.
