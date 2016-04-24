@@ -3,6 +3,7 @@ Revision history for CPAN-Testers-WWW-Reports-Query-Report
 
         - added a content() method to aid debugging. Returns the text response
           sent by the server.
+        - check network using api.cpantesters.org.
 
 0.04    2014-09-27
         - fixed license fields in META.json to be lists.

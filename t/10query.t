@@ -239,7 +239,7 @@ SKIP: {
 
 # crude, but it'll hopefully do ;)
 sub pingtest {
-    my $domain = 'www.cpantesters.org';
+    my $domain = 'api.cpantesters.org';
     my $cmd =   $^O =~ /solaris/i                           ? "ping -s $domain 56 1" :
                 $^O =~ /dos|os2|mswin32|netware|cygwin/i    ? "ping -n 1 $domain "
                                                             : "ping -c 1 $domain >/dev/null 2>&1";
