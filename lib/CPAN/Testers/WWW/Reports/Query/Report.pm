@@ -104,6 +104,10 @@ sub report {
     }
 
     $self->{content} = $mech->content;
+    unless($self->{content}) {
+        $self->{error} = 'no data returned by the server';
+        return;
+    }
 
     my $data;
     eval {
@@ -150,6 +154,11 @@ sub _parse {
     return $data;
 }
 
+sub content {
+    my $self    = shift;
+    return $self->{content};
+}
+
 sub error {
     my $self    = shift;
     return $self->{error};
@@ -186,6 +195,10 @@ report.
 =head2 Data Methods
 
 =over 4
+
+=item * content
+
+Returns the current server textual response. Useful for debugging.
 
 =item * error
 

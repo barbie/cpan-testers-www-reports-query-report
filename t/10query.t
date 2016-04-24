@@ -216,6 +216,7 @@ SKIP: {
                 diag("error args=".Dumper($args));
                 diag("error data=".Dumper($data));
                 diag("error message=".$error);
+                diag("server response=".$query->content);
                 ok(0,'missing results for test');
             }
         }
